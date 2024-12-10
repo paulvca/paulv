@@ -1,0 +1,87 @@
+---
+layout: default
+permalink: /publications/
+---
+<!-- Configuração YAML Front Matter: 
+- `layout`: Especifica o layout para o Jekyll (blog neste caso).
+- `title`: Define o título da página.
+- `permalink`: Define o URL fixo para a página. -->
+
+<html>
+<head>
+    <title>Paulo V.</title> <!-- Define o título que aparece na aba do navegador. -->
+    <meta charset='UTF-8'> <!-- Define a codificação de caracteres para UTF-8. -->
+    <meta content='width=device-width, initial-scale=1' name='viewport'/>
+    <!-- Torna a página responsiva para diferentes tamanhos de tela, ajustando o zoom inicial. -->
+
+    <meta name='description' content='Gregory Gundersen is a PhD candidate at Princeton.'>
+    <!-- Uma descrição que será exibida por motores de busca. Alterar isso modifica como a página é apresentada nos resultados de busca. -->
+
+    <meta name='keywords' content='
+        machine learning,
+        statistical machine learning,
+        bayesian inference,
+        statistics,
+        computational statistics,
+        linear algebra,
+        numerical linear algebra,
+        statistical software,
+        deep learning,
+        computer science
+    '>
+    <!-- Define palavras-chave para motores de busca. Modificar estas palavras altera o SEO da página. -->
+
+    <meta name='author' content='Paulo V.'>
+    <!-- Define o autor da página. Pode ser útil para atribuição e SEO. -->
+
+    <link rel='shortcut icon' href='/favicon.png?v=e' />
+    <!-- Define o ícone que aparece na aba do navegador. Alterar este arquivo muda o favicon. -->
+
+    <link href='/css/publications.css' rel='stylesheet'/>
+    <!-- Liga o arquivo CSS externo para estilizar a página. Alterar o caminho ou o conteúdo desse CSS afeta a aparência. -->
+
+    {% include mathjax.html %}
+    <!-- Inclui o script MathJax para renderizar fórmulas matemáticas. Se removido, as fórmulas não serão processadas. -->
+</head>
+<body>
+    <div id='blog' class='wrap'>
+        <div id='intro'>
+            <div class='quote'>
+                <img src="/assets/image/tapete.jpeg" alt="Imagem relacionada à citação" style="max-width: 100%; height: auto; margin-bottom: 10px;">
+                <p>"I have come to the frightening conclusion that I am the decisive element. It is my personal approach that creates the climate. It is my daily mood that makes the weather. I possess tremendous power to make life miserable or joyous. I can be a tool of torture or an instrument of inspiration, I can humiliate or humor, hurt or heal. In all situations, it is my response that decides whether a crisis is escalated or de-escalated, and a person is humanized or de-humanized."</p>
+                <!-- Bloco de citação com uma frase motivacional. Alterar o texto ou o estilo pode mudar o impacto visual. -->
+                <a href='https://en.wikipedia.org/wiki/Haim_Ginott' target='_blank'>Haim G. Ginott</a>
+                <!-- Link para o autor da citação. -->
+            </div>
+        </div>
+        
+        <div id='posts' class='section'>
+            {% for post in site.posts %}
+                <!-- Loop Jekyll que percorre todas as postagens. Se removido, as postagens não serão exibidas. -->
+                <div class='post-row'>
+                    <p class='post-title'>
+                        <a href="{{ post.url }}">
+                            {% katexmm %}
+                            {{ post.title }}
+                            {% endkatexmm %}
+                            <!-- Exibe o título da postagem e usa KaTeX para renderização matemática se necessário. -->
+                        </a>
+                    </p>
+                    <p class='post-date'>
+                        {{ post.date | date_to_long_string }}
+                        <!-- Mostra a data da postagem em um formato longo. -->
+                    </p>
+                </div>
+                <p class='post-subtitle'>
+                    {% katexmm %}
+                    {{ post.subtitle }}
+                    {% endkatexmm %}
+                    <!-- Mostra o subtítulo da postagem, também renderizado com KaTeX. -->
+                </p>
+                <span class='hidden'>{{ forloop.index }}</span>
+                <!-- Índice da postagem no loop, útil para depuração ou ordenação. -->
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
