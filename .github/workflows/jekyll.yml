@@ -24,12 +24,12 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install ruby-full build-essential zlib1g-dev
-          gem install jekyll bundler
+          sudo gem install jekyll bundler
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Build site
         run: |
-          bundle install
+          sudo bundle install
           bundle exec jekyll build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
