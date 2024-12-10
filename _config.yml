@@ -1,7 +1,7 @@
 highlighter: rouge
 permalink: /publications/:year/:month/:day/:title/
 environment: prod
-url: "http://pvca.io"  # Sitemap base URL.
+url: "https://pvictorca.github.io"  # Sitemap base URL.
 plugins:
   - jekyll-scholar
   - jekyll-sitemap
