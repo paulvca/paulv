@@ -19,7 +19,7 @@ Writing is important than ever in our age, where AI is evolving quickly and inte
 
 Paul Graham, [Writes and Write-Nots](https://www.paulgraham.com/writes.html)
 
-While the Future remains uncertain, I'm betting that those who have the ability to think clearly will have the greatest advantage. 
+While the future remains uncertain, I'm betting that those who have the ability to think clearly will have the greatest advantage. 
 
 With that in mind, this blog won't be focused on only subject or area, as I don't like to limit myself. You'll see themes ranging from AI to music, Anime to literature, and so on. 
 
