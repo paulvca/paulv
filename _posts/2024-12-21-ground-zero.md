@@ -13,7 +13,7 @@ One of the worst things we can have is the illusion of knowledge. We might think
 
 None of these are true unless we put our thoughts into words. Writing is the tool to turn the imaginary into reality. You can't outsource your critical thinking and if so, you're only setting yourself up to failure. Don't fall for this trap. 
 
-Writing is important than ever in our age, where AI is evolving quickly and intelligence is now becoming a commodity. As Paul Graham notes
+Writing is more important than ever in our age, where AI is evolving quickly and intelligence is now becoming a commodity. As Paul Graham notes
 
 >*"I'm usually reluctant to make predictions about technology, but I feel fairly confident about this one: in a couple decades there won't be many people who can write.[...] The reason so many people have trouble writing is that it's fundamentally difficult. To write well you have to think clearly, and thinking clearly is hard. [...]  AI has blown this world open. Almost all pressure to write has dissipated. You can have AI do it for you, both in school and at work."*
 
