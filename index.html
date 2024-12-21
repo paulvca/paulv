@@ -1,30 +1,63 @@
+<!-- Define o tipo do documento como HTML5. Se removido, o navegador pode entrar em "quirks mode" e renderizar a página de forma inconsistente -->
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Paulo V.</title>
-	<meta charset='UTF-8'>
-	<meta content='width=device-width, initial-scale=1' name='viewport'/>
-	
-	<meta name='description' content='Paulo V. - Publications and contact information'>
-	<meta name='keywords' content='research, publications, contact'>
-	<meta name='author' content='Paulo V.'>
 
-	<link rel='stylesheet' type='text/css' href='css/main.css'/>
+<!-- Início do documento HTML. Todo o conteúdo da página deve estar dentro dessas tags -->
+<html>
+
+<!-- A seção head contém metadados e links para recursos externos. Não é visível na página -->
+<head>
+    <!-- Define o título que aparece na aba do navegador. Importante para SEO -->
+    <title>Paulo V.</title>
+
+    <!-- Define a codificação de caracteres como UTF-8, permitindo caracteres especiais e acentos -->
+    <meta charset='UTF-8'>
+
+    <!-- Configura a visualização responsiva para dispositivos móveis. 
+         Se removido, a página não se adaptará bem a telas pequenas -->
+    <meta content='width=device-width, initial-scale=1' name='viewport'/>
+    
+    <!-- Descrição da página para mecanismos de busca (SEO) -->
+    <meta name='description' content='Paulo V. - Publications and contact information'>
+
+    <!-- Palavras-chave para mecanismos de busca (menos relevante hoje em dia para SEO) -->
+    <meta name='keywords' content='research, publications, contact'>
+
+    <!-- Define o autor da página -->
+    <meta name='author' content='Paulo V.'>
+
+    <!-- Link para o arquivo CSS externo. 
+         Se o caminho estiver errado ou o arquivo não existir, a página ficará sem estilização -->
+    <link rel='stylesheet' type='text/css' href='css/main.css'/>
 </head>
+
+<!-- O corpo da página, onde todo o conteúdo visível deve estar -->
 <body>
-	<div id='landing'>
-		<h1>Paulo V.</h1>
-		<ul id='links'>
-			<li>
-				<a href='/publications/'>Publications</a>
-			</li>
-			<li>
-				<a href='https://x.com/paulvca' target='_blank'>X</a>
-			</li>
-			<li id='contact'>
-				<span>Contact:</span> paulvca@pm.me
-			</li>
-		</ul>
-	</div>
+    <!-- Div principal da landing page. 
+         Se o ID for alterado, certifique-se de atualizar qualquer CSS ou JavaScript que o referencie -->
+    <div id='landing'>
+        <!-- Título principal da página -->
+        <h1>Paulo V.</h1>
+
+        <!-- Lista de links e informações de contato -->
+        <ul id='links'>
+            <!-- Link para a página de publicações. 
+                 O caminho '/publications/' é relativo à raiz do site -->
+            <li>
+                <a href='/publications/'>Publications</a>
+            </li>
+
+            <!-- Link para o perfil no X (Twitter). 
+                 target='_blank' faz o link abrir em nova aba -->
+            <li>
+                <a href='https://x.com/paulvca' target='_blank'>X</a>
+            </li>
+
+            <!-- Informação de contato. 
+                 O ID 'contact' pode ser usado para estilização específica -->
+            <li id='contact'>
+                <span>Contact:</span> paulvca@pm.me
+            </li>
+        </ul>
+    </div>
 </body>
 </html>
