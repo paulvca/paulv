@@ -7,8 +7,6 @@ keywords: blogging, writing
 published: true
 ---
 
-<img src="/assets/image/groundzero.jpg" alt="Image by Mac Baconai" style="width:100%; height:auto;" />
-
 Have you ever felt ashamed when you tried to write something you thought you knew, only to realize you didn't?  I've felt the same way. That's why I created this blog. 
 
 One of the worst things we can have is the illusion of knowledge. We might think we know the subject just because we thought on it, or know what is the best decision to make after spending some time evaluating options. 
