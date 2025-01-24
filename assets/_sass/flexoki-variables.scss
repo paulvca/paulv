@@ -1,0 +1,141 @@
+// _sass/_flexoki-variables.scss
+
+// ======================================
+// Flexoki Color Scheme Variables
+// MIT License - Steph Ango
+// ======================================
+
+// Base Colors
+:root {
+  --flexoki-paper:       #FFFCF0;  // Light mode background
+  --flexoki-black:       #100F0F;  // Primary text color
+}
+
+// Neutrals (Shades of Gray)
+:root {
+  --flexoki-50:          #F2F0E5;
+  --flexoki-100:         #E6E4D9;
+  --flexoki-150:         #DAD8CE;
+  --flexoki-200:         #CECDC3;
+  --flexoki-300:         #B7B5AC;
+  --flexoki-400:         #9F9D96;
+  --flexoki-500:         #878580;
+  --flexoki-600:         #6F6E69;
+  --flexoki-700:         #575653;
+  --flexoki-800:         #403E3C;
+  --flexoki-850:         #343331;
+  --flexoki-900:         #282726;
+  --flexoki-950:         #1C1B1A;
+}
+
+// Accent Colors
+:root {
+  // Red
+  --flexoki-red-50:      #FFE1D5;
+  --flexoki-red-100:     #FFCABB;
+  --flexoki-red-200:     #F89A8A;
+  --flexoki-red-300:     #E8705F;
+  --flexoki-red-400:     #D14041;
+  --flexoki-red-500:     #C03E35;
+  --flexoki-red-600:     #AF3029;
+  --flexoki-red-700:     #942822;
+  --flexoki-red-800:     #6C201C;
+  --flexoki-red-900:     #3E1715;
+
+  // Orange
+  --flexoki-orange-50:   #FFE7CE;
+  --flexoki-orange-100:  #FED3AF;
+  --flexoki-orange-200:  #F9AE77;
+  --flexoki-orange-300:  #EC8B49;
+  --flexoki-orange-400:  #DA702C;
+  --flexoki-orange-500:  #CB6120;
+  --flexoki-orange-600:  #BC5215;
+  --flexoki-orange-700:  #9D4310;
+  --flexoki-orange-800:  #71320D;
+  --flexoki-orange-900:  #40200D;
+
+  // Yellow
+  --flexoki-yellow-50:   #FAEEC6;
+  --flexoki-yellow-100:  #F6E2A0;
+  --flexoki-yellow-200:  #ECCB60;
+  --flexoki-yellow-300:  #DFB431;
+  --flexoki-yellow-400:  #D0A215;
+  --flexoki-yellow-500:  #BE9207;
+  --flexoki-yellow-600:  #AD8301;
+  --flexoki-yellow-700:  #8E6B01;
+  --flexoki-yellow-800:  #664D01;
+  --flexoki-yellow-900:  #3A2D04;
+
+  // Green
+  --flexoki-green-50:    #EDEECF;
+  --flexoki-green-100:   #DDE2B2;
+  --flexoki-green-200:   #BEC97E;
+  --flexoki-green-300:   #A0AF54;
+  --flexoki-green-400:   #879A39;
+  --flexoki-green-500:   #768D21;
+  --flexoki-green-600:   #66800B;
+  --flexoki-green-700:   #536907;
+  --flexoki-green-800:   #3D4C07;
+  --flexoki-green-900:   #252D09;
+
+  // Blue
+  --flexoki-blue-50:     #E1ECEB;
+  --flexoki-blue-100:    #C6DDE8;
+  --flexoki-blue-200:    #92BFDB;
+  --flexoki-blue-300:    #66A0C8;
+  --flexoki-blue-400:    #4385BE;
+  --flexoki-blue-500:    #3171B2;
+  --flexoki-blue-600:    #205EA6;
+  --flexoki-blue-700:    #1A4F8C;
+  --flexoki-blue-800:    #163B66;
+  --flexoki-blue-900:    #12253B;
+
+  // Purple
+  --flexoki-purple-50:   #F0EAEC;
+  --flexoki-purple-100:  #E2D9E9;
+  --flexoki-purple-200:  #C4B9E0;
+  --flexoki-purple-300:  #A699D0;
+  --flexoki-purple-400:  #8B7EC8;
+  --flexoki-purple-500:  #735EB5;
+  --flexoki-purple-600:  #5E409D;
+  --flexoki-purple-700:  #4F3685;
+  --flexoki-purple-800:  #3C2A62;
+  --flexoki-purple-900:  #261C39;
+
+  // Magenta
+  --flexoki-magenta-50:  #FEE4E5;
+  --flexoki-magenta-100: #FCCFDA;
+  --flexoki-magenta-200: #F4AAC2;
+  --flexoki-magenta-300: #E47DA8;
+  --flexoki-magenta-400: #CE5D97;
+  --flexoki-magenta-500: #B74583;
+  --flexoki-magenta-600: #A02F6F;
+  --flexoki-magenta-700: #87285E;
+  --flexoki-magenta-800: #641F46;
+  --flexoki-magenta-900: #39172B;
+
+  // Font Stacks
+  --font-mono: ui-monospace, SFMono-Regular, "Cascadia Code", "JetBrains Mono", 
+              "Fira Code", "Roboto Mono", "Liberation Mono", Menlo, Monaco, 
+              Consolas, monospace;
+}
+
+// ======================================
+// Dark Mode Overrides
+// ======================================
+@media (prefers-color-scheme: dark) {
+  :root {
+    --flexoki-paper: #100F0F;
+    --flexoki-black: #E6E4D9;
+    
+    // Dark mode accent adjustments
+    --flexoki-red-600:    #D14041;
+    --flexoki-orange-600: #DA702C;
+    --flexoki-yellow-600: #D0A215;
+    --flexoki-green-600:  #879A39;
+    --flexoki-cyan-600:   #3AA99F;
+    --flexoki-blue-600:   #4385BE;
+    --flexoki-purple-600: #8B7EC8;
+    --flexoki-magenta-600: #CE5097;
+  }
+}

@@ -1,210 +1,86 @@
+@import "flexoki-variables";  /* Adicione no início do arquivo */
 
-/* Estilo base do corpo da página
- * - Define a cor do texto como preto com 80% de opacidade
- * - Usa uma fonte do sistema Apple, com fallbacks para Helvetica e Arial
- * - Se alterada a font-size, todos os elementos em 'em' serão afetados
- * - Margem mínima para evitar conteúdo colado nas bordas
- */
+/* Estilo base do corpo da página */
 body {
-    color: rgba(0, 0, 0, 0.8);
+    color: var(--flexoki-800);          /* Antes: rgba(0, 0, 0, 0.8) */
     font-family: -apple-system, Helvetica, arial, sans-serif;
     font-size: 20px;
     margin: 7px;
     padding: 0;
+    background: var(--flexoki-paper);   /* Fundo bege claro */
 }
 
-/* Estilo padrão para links
- * - Mantém a mesma cor do texto normal
- * - Se alterado, afetará todos os links que não têm estilo específico
- */
+/* Adicione estas regras específicas */
+#landing ul#links,
+#papers .pub-links {
+    list-style-type: none !important;  /* Remove bullets */
+    padding-left: 0 !important;        /* Remove padding esquerdo */
+}
+
+
+/* Links */
 a {
-    color: rgba(0, 0, 0, 0.8);
+    color: var(--flexoki-blue-600);     /* Azul Flexoki para links */
 }
 
-/* Efeito hover em links
- * - Remove a decoração padrão (sublinhado) ao passar o mouse
- * - Mantém a mesma cor para consistência visual
- */
 a:hover {
-    color: rgba(0, 0, 0, 0.8);
+    color: var(--flexoki-blue-400);     /* Azul mais claro no hover */
     text-decoration: none;
 }
 
-/* Estilo para títulos principais
- * - Define tamanho 2x maior que o texto base
- * - Se alterado, afeta todos os h1 da página
- */
+/* Títulos */
 h1 {
     font-size: 40px;
+    color: var(--flexoki-900);          /* Preto Flexoki mais intenso */
 }
 
-/* Container principal da página inicial
- * - Limita a largura máxima para melhor legibilidade
- * - Centraliza o conteúdo com margens automáticas
- * - Espaçamento superior e inferior significativo
- */
+/* Container principal */
 #landing {
     max-width: 700px;
     margin: 119px auto;
 }
 
-/* Lista de links na página inicial
- * - Remove marcadores da lista
- * - Remove padding padrão à esquerda
- * - Adiciona margem inferior para espaçamento
- */
-#landing ul#links {
-    list-style-type: none;
-    padding-left: 0;
-    margin: 0 0 20px 0;
-}
-
-/* Itens da lista de links
- * - Define a fonte principal
- * - Adiciona espaçamento entre itens
- */
+/* Lista de links */
 #landing ul#links li {
-    font-family: -apple-system, helvetica, arial, sans-serif;
-    margin-right: 25px;
-    padding-bottom: 5px;
+    color: var(--flexoki-600);          /* Cinza médio */
+    border-bottom: 1px solid var(--flexoki-200);  /* Borda sutil */
 }
 
-/* Efeito hover nos links da lista
- * - Remove sublinhado ao passar o mouse
- */
-#landing ul#links li a:hover {
-    text-decoration: none;
-}
-
-/* Estilo específico para o item de contato
- * - Usa fonte monoespaçada (courier)
- * - Remove margem direita
- * - Adiciona espaço superior
- */
+/* Contato */
 #landing ul#links li#contact {
+    color: var(--flexoki-700);          /* Cinza mais escuro */
     font-family: courier;
-    margin: 0;
-    padding-top: 5px;
 }
 
-/* Listas dentro de seções na página inicial
- * - Pequeno recuo à esquerda
- */
-#landing .section ul {
-    padding-left: 15px;
-}
-
-/* Estilo compartilhado para navegação e seção de papers
- * - Largura máxima para legibilidade
- * - Centralizado na página
- * - Margem inferior grande
- */
-.nav,
-#papers {
-    max-width: 700px;
-    margin: 0 auto 100px auto;
-}
-
-/* Seção específica de papers
- * - Margem superior significativa
- * - Espaçamento entre linhas para melhor legibilidade
- */
-#papers {
-    margin-top: 83px;
-    line-height: 1.5em;
-}
-
-/* Título da seção de papers
- * - Remove margem superior padrão
- * - Adiciona espaço significativo abaixo
- */
-#papers h1 {
-    margin-top: 0;
-    margin-bottom: 40px;
-}
-
-/* Container para cada paper individual
- * - Espaço entre papers
- */
-#papers .paper-row {
-    margin-bottom: 30px;
-}
-
-/* Remove margens padrão dos elementos de paper
- * - Afeta título, autores, local de publicação e links
- */
-#papers .paper-title,
-#papers .paper-authors,
-#papers .paper-venue,
-#papers .paper-links {
-    margin: 0;
-}
-
-/* Lista de links de publicação
- * - Remove marcadores
- * - Remove padding esquerdo
- * - Remove margem superior
- */
-#papers .pub-links {
-    list-style-type: none;
-    padding-left: 0;
-    margin-top: 0;
-}
-
-/* Items da lista de links de publicação
- * - Exibe inline (horizontal)
- * - Espaçamento à direita entre links
- */
-#papers .pub-links li {
-    display: inline;
-    padding-right: 10px;
-}
-
-/* Barra de navegação
- * - Margens superior e inferior moderadas
- * - Alinha altura da linha com navegação do blog
- */
-.nav {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    line-height: 24px;
-}
-
-/* Links na navegação
- * - Cor mais clara que o texto normal
- * - Remove decorações padrão
- * - Fonte menor
- */
+/* Navegação */
 .nav a {
-    color: rgba(0, 0, 0, 0.6);
-    text-decoration: none;
-    border-bottom: none;
-    font-size: 12px;
+    color: var(--flexoki-600);          /* Substitui rgba(0,0,0,0.6) */
 }
 
-/* Efeito hover nos links de navegação
- * - Negrito ao passar o mouse
- */
 .nav a:hover {
-    font-weight: bold;
+    color: var(--flexoki-800);          /* Texto mais escuro no hover */
 }
 
-/* Lista de navegação
- * - Remove marcadores
- * - Remove padding padrão
- */
-.nav ul {
-    list-style-type: none;
-    padding: 0;
+/* Seção de papers */
+#papers {
+    border-top: 1px solid var(--flexoki-200);
 }
 
-/* Itens da lista de navegação
- * - Exibe horizontalmente
- * - Espaçamento entre itens
- * - Altura da linha consistente
- */
-.nav ul li {
-    display: inline;
-    margin-right: 10px;
-    line-height: 1.5em;
+.paper-title {
+    color: var(--flexoki-900);
+}
+
+.paper-venue {
+    color: var(--flexoki-600);
+}
+
+.pub-links li a {
+    color: var(--flexoki-blue-600);
+    border: 1px solid var(--flexoki-200);
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.pub-links li a:hover {
+    background: var(--flexoki-50);
 }
