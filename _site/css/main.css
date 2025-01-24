@@ -1,86 +1,85 @@
-@import "flexoki-variables";  /* Adicione no início do arquivo */
+@import "flexoki-variables";
 
-/* Estilo base do corpo da página */
+/* =================== ESTILOS GERAIS =================== */
 body {
-    color: var(--flexoki-800);          /* Antes: rgba(0, 0, 0, 0.8) */
+    color: #CECDC3;
+    background: #100F0F;
     font-family: -apple-system, Helvetica, arial, sans-serif;
     font-size: 20px;
     margin: 7px;
     padding: 0;
-    background: var(--flexoki-paper);   /* Fundo bege claro */
 }
 
-/* Adicione estas regras específicas */
+/* =================== REMOÇÃO DE SUBLINHADOS =================== */
+#landing ul#links li {
+    border-bottom: none !important;  /* Remove linha sob itens da lista */
+}
+
+h2 {
+    border-bottom: none !important;  /* Remove linha sob "Publications" */
+}
+
+a {
+    text-decoration: none !important;  /* Remove sublinhado de links */
+}
+
+/* =================== ESTRUTURA ORIGINAL (MANTIDA) =================== */
 #landing ul#links,
 #papers .pub-links {
-    list-style-type: none !important;  /* Remove bullets */
-    padding-left: 0 !important;        /* Remove padding esquerdo */
+    list-style-type: none !important;
+    padding-left: 0 !important;
 }
 
-
-/* Links */
 a {
-    color: var(--flexoki-blue-600);     /* Azul Flexoki para links */
+    color: #4385BE;
 }
 
 a:hover {
-    color: var(--flexoki-blue-400);     /* Azul mais claro no hover */
-    text-decoration: none;
+    color: #66A0C8;
 }
 
-/* Títulos */
 h1 {
     font-size: 40px;
-    color: var(--flexoki-900);          /* Preto Flexoki mais intenso */
+    color: #E6E4D9;
 }
 
-/* Container principal */
 #landing {
     max-width: 700px;
     margin: 119px auto;
 }
 
-/* Lista de links */
-#landing ul#links li {
-    color: var(--flexoki-600);          /* Cinza médio */
-    border-bottom: 1px solid var(--flexoki-200);  /* Borda sutil */
-}
-
-/* Contato */
 #landing ul#links li#contact {
-    color: var(--flexoki-700);          /* Cinza mais escuro */
+    color: #575653;
     font-family: courier;
 }
 
-/* Navegação */
 .nav a {
-    color: var(--flexoki-600);          /* Substitui rgba(0,0,0,0.6) */
+    color: #6F6E69;
 }
 
 .nav a:hover {
-    color: var(--flexoki-800);          /* Texto mais escuro no hover */
+    color: #CECDC3;
 }
 
-/* Seção de papers */
 #papers {
-    border-top: 1px solid var(--flexoki-200);
+    border-top: 1px solid #282726;
 }
 
 .paper-title {
-    color: var(--flexoki-900);
+    color: #E6E4D9;
 }
 
 .paper-venue {
-    color: var(--flexoki-600);
+    color: #6F6E69;
 }
 
 .pub-links li a {
-    color: var(--flexoki-blue-600);
-    border: 1px solid var(--flexoki-200);
+    color: #4385BE;
+    border: 1px solid #282726;
     padding: 2px 8px;
     border-radius: 4px;
 }
 
 .pub-links li a:hover {
-    background: var(--flexoki-50);
+    background: #1C1B1A;
 }
