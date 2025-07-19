@@ -26,8 +26,12 @@ GEM
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
     execjs (2.10.0)
+    ffi (1.17.0)
     ffi (1.17.0-x64-mingw-ucrt)
     forwardable-extended (2.6.0)
+    google-protobuf (4.29.1)
+      bigdecimal
+      rake (>= 13)
     google-protobuf (4.29.1-x64-mingw-ucrt)
       bigdecimal
       rake (>= 13)
@@ -73,11 +77,15 @@ GEM
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
     latex-decode (0.4.0)
+    libv8-node (24.1.0.0)
+    libv8-node (24.1.0.0-x86_64-linux)
     liquid (4.0.4)
     listen (3.9.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
+    mini_racer (0.19.0)
+      libv8-node (~> 24.1.0.0)
     minima (2.5.2)
       jekyll (>= 3.5, < 5.0)
       jekyll-feed (~> 0.9)
@@ -98,6 +106,8 @@ GEM
     safe_yaml (1.0.5)
     sass-embedded (1.82.0-x64-mingw-ucrt)
       google-protobuf (~> 4.28)
+    sass-embedded (1.82.0-x86_64-linux-gnu)
+      google-protobuf (~> 4.28)
     terminal-table (3.0.2)
       unicode-display_width (>= 1.1.1, < 3)
     thread_safe (0.3.6)
@@ -111,6 +121,7 @@ GEM
 
 PLATFORMS
   x64-mingw-ucrt
+  x86_64-linux
 
 DEPENDENCIES
   base64
@@ -120,6 +131,7 @@ DEPENDENCIES
   jekyll-katex
   jekyll-scholar
   jekyll-sitemap
+  mini_racer
   minima (~> 2.5)
   observer
   tzinfo (~> 1.2)
