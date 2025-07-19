@@ -1,4 +1,3 @@
-@import "flexoki-variables";
 
 /* =================== CORES FIXAS DO DARK MODE FLEXOKI =================== */
 html {
@@ -124,7 +123,7 @@ h1 {
 
 .nav a {
   border-bottom: none;
-  font-size: 15px;
+  font-size: 18px; /* Increased from 15px */
 }
 
 .nav ul {
@@ -153,17 +152,17 @@ h1 {
 }
 
 .front-matter .bylines .byline h3 {
-  font-size: 14px;
+  font-size: 17px; /* Increased from 14px */
   text-transform: uppercase;
 }
 
 .front-matter .bylines .byline p {
-  font-size: 15px;
+  font-size: 18px; /* Increased from 15px */
   line-height: 1.6em;
 }
 
 .article {
-  font-size: 18px;
+  font-size: 22px; /* Increased from 18px */
   line-height: 1.6em;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -177,7 +176,7 @@ h1 {
 }
 
 .article h2 {
-  font-size: 26px;
+  font-size: 32px; /* Increased from 26px */
   border-bottom-width: 1px;
   border-bottom-style: solid;
   padding-bottom: 1rem;
@@ -194,7 +193,7 @@ h1 {
 .article .figure .caption {
   padding-top: 15px;
   display: inline-block;
-  font-size: 13px;
+  font-size: 16px; /* Increased from 13px */
   line-height: 1.2em;
 }
 
@@ -207,7 +206,7 @@ h1 {
 }
 
 .article div.highlight {
-  font-size: 13px;
+  font-size: 16px; /* Increased from 13px */
   line-height: 1.3em;
   border-top-width: 1px;
   border-bottom-width: 1px;
@@ -229,7 +228,7 @@ h1 {
 #bibliography ol.bibliography {
   padding-left: 15px;
   padding-top: 30px;
-  font-size: 12px;
+  font-size: 15px; /* Increased from 12px */
 }
 
 #blog {
@@ -238,7 +237,7 @@ h1 {
 }
 
 #blog #intro {
-  font-size: 16px;
+  font-size: 20px; /* Increased from 16px */
   font-style: italic;
   line-height: 1.4em;
   margin-bottom: 40px;
@@ -254,7 +253,7 @@ h1 {
 
 #blog .post-date {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 15px; /* Increased from 12px */
   font-weight: bold;
   margin-top: 4px;
   margin-bottom: 4px;
@@ -267,7 +266,7 @@ h1 {
 }
 
 #blog .post-title a {
-  font-size: 18px;
+  font-size: 22px; /* Increased from 18px */
 }
 
 #blog .post-title a:hover {
@@ -275,14 +274,14 @@ h1 {
 }
 
 #blog .post-subtitle {
-  font-size: 14px;
+  font-size: 17px; /* Increased from 14px */
   margin-top: 0;
   margin-bottom: 25px;
   line-height: 1.5em;
 }
 
 #blog .year {
-  font-size: 18px;
+  font-size: 22px; /* Increased from 18px */
   position: relative;
   right: 100px;
   width: 100px;
